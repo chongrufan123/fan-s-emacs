@@ -1,0 +1,2 @@
+;;; -*- no-byte-compile: t -*-
+(define-package "doom-modeline-now-playing" "20210202.1948" "Segment for Doom Modeline to show playerctl information" '((emacs "24.4") (doom-modeline "3.0.0") (async "1.9.3")) :commit "bed9e4da626ede148c7d362188b2e7729e2a8a4f" :authors '(("Ellis Kenyő" . "me@elken.dev")) :maintainer '("Ellis Kenyő" . "me@elken.dev") :url "https://github.com/elken/doom-modeline-now-playing")

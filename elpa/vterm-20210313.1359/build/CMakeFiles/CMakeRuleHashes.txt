@@ -1,0 +1,11 @@
+# Hashes of file build rules.
+4733113316d065057c4ce527e4171fc0 CMakeFiles/libvterm
+a47438c2d70bb40bfc8441d8b83e7004 CMakeFiles/libvterm-complete
+3bd2e858e44e61be250675626c3881fe CMakeFiles/run
+2bd92b33611787f71bdc8668b092a815 libvterm-prefix/src/libvterm-stamp/libvterm-build
+d551a744cd818f396057583b8ba943df libvterm-prefix/src/libvterm-stamp/libvterm-configure
+2aadbd12636d81a87d2a61bf6c067d06 libvterm-prefix/src/libvterm-stamp/libvterm-download
+f7f0a5e5dcd0baf07e4d0578a2ce8f7c libvterm-prefix/src/libvterm-stamp/libvterm-install
+99860e141e8be42fa204db6438667b67 libvterm-prefix/src/libvterm-stamp/libvterm-mkdir
+49f101773e41cef67292bf16671b4da2 libvterm-prefix/src/libvterm-stamp/libvterm-patch
+405d7bfb4f4d647ac79f9815ff844341 libvterm-prefix/src/libvterm-stamp/libvterm-update

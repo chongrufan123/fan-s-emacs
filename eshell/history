@@ -1,0 +1,26 @@
+ll
+factor i love you
+figlet i love you
+figlet It\'s FAN\'s Emacs
+ls 
+cd ..
+cd site-lisp/
+ll
+ls 
+git clone https://github.com.cnpmjs.org/manateelazycat/company-english-helper.git
+cd ..
+cd site-lisp/
+ll
+ls 
+git clone https://github.com.cnpmjs.org/manateelazycat/insert-translated-name.git ~/.emacs.d/site-lisp/
+git clone https://github.com.cnpmjs.org/manateelazycat/insert-translated-name.git ~/.emacs.d/site-lisp/insert-translated-name
+ll
+ls 
+cd ..
+cd site-lisp/
+ls 
+cd insert-translated-name/
+ls 
+make insert-translated-name.el 
+make install
+make 
