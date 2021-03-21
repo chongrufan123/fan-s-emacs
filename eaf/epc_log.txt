@@ -3616,3 +3616,123 @@ receiving...
 (AutoLog) Called: ThreadingEPCHandler._send('return', 530, None)
 (AutoLog) Returns: ThreadingEPCHandler._send(...) = None
 (AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 29; data = b'(call 531 update_views (""))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 531 update_views (""))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(531, Symbol('update_views'), [''])
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 531, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 531, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 29; data = b'(call 532 update_views (""))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 532 update_views (""))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(532, Symbol('update_views'), [''])
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 532, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 532, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 29; data = b'(call 533 update_views (""))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 533 update_views (""))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(533, Symbol('update_views'), [''])
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 533, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 533, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 29; data = b'(call 534 update_views (""))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 534 update_views (""))\n')
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(534, Symbol('update_views'), [''])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 534, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 534, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 29; data = b'(call 535 update_views (""))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 535 update_views (""))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(535, Symbol('update_views'), [''])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 535, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 535, None)
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 29; data = b'(call 536 update_views (""))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 536 update_views (""))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(536, Symbol('update_views'), [''])
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 536, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 536, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 29; data = b'(call 537 update_views (""))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 537 update_views (""))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(537, Symbol('update_views'), [''])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 537, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 537, None)
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 29; data = b'(call 538 update_views (""))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 538 update_views (""))\n')
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(538, Symbol('update_views'), [''])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 538, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 538, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 29; data = b'(call 539 update_views (""))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 539 update_views (""))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(539, Symbol('update_views'), [''])
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 539, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 539, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 29; data = b'(call 540 update_views (""))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 540 update_views (""))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(540, Symbol('update_views'), [''])
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 540, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 540, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 29; data = b'(call 541 update_views (""))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 541 update_views (""))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(541, Symbol('update_views'), [''])
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 541, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 541, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 29; data = b'(call 542 update_views (""))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 542 update_views (""))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(542, Symbol('update_views'), [''])
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 542, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 542, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 29; data = b'(call 543 update_views (""))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 543 update_views (""))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(543, Symbol('update_views'), [''])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 543, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 543, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+receiving...
+received: length = 29; data = b'(call 544 update_views (""))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 544 update_views (""))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(544, Symbol('update_views'), [''])
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 544, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 544, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 29; data = b'(call 545 update_views (""))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 545 update_views (""))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(545, Symbol('update_views'), [''])
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 545, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 545, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
