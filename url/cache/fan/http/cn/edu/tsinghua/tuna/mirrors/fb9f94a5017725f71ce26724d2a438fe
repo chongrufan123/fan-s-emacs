@@ -1,3 +1,15 @@
+HTTP/1.1 200 OK
+Server: nginx/1.14.2
+Date: Mon, 22 Mar 2021 03:50:44 GMT
+Content-Type: application/octet-stream
+Content-Length: 1642565
+Last-Modified: Sun, 21 Mar 2021 12:20:53 GMT
+Connection: keep-alive
+ETag: "60573a25-191045"
+Strict-Transport-Security: max-age=31536000
+X-TUNA-MIRROR-ID: nanomirrors
+Accept-Ranges: bytes
+
 (1
  (0blayout . [(20190703 527) nil "Layout grouping with ease" single ((:commit . "fd9a8f353dbd45b4628b5f84b8d8c2525ebf571d") (:authors ("Elis \"etu\" Axelsson")) (:maintainer "Elis \"etu\" Axelsson") (:keywords "convenience" "window-management") (:url . "https://github.com/etu/0blayout"))])
  (0x0 . [(20201121 1210) ((emacs (24 1))) "Upload to 0x0.st" single ((:commit . "996f822a7c6a7ff7caf49ee537e92c0d01be1f9c") (:authors ("Philip K." . "philipk@posteo.net")) (:maintainer "Philip K." . "philipk@posteo.net") (:keywords "comm") (:url . "https://git.sr.ht/~zge/nullpointer-emacs"))])

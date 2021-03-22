@@ -17,6 +17,7 @@
 ;; (add-subdirs-to-load-path "~/.emacs.d/site-lisp/")
 (setq custom-file (expand-file-name "custom.el" user-emacs-directory))
 
+
 (require 'init-const)
 (require 'init-elpa)
 (require 'init-kbd)
@@ -26,7 +27,9 @@
 (require 'init-tool)
 (require 'init-org)
 (require 'init-vision)
-
+(add-to-list 'load-path
+             "~/.emacs.d/site-lisp/ledger-mode/")
+(require 'ledger-mode)
 ;;; init.el ends here
 
 

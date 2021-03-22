@@ -22,6 +22,9 @@
 								 ("[想法]" . (:foreground "black" :background "snow " :weight bold))
 								 ("[其他]" . (:foreground "white" :background "#566573" :weight bold)))))
 
+
+
+
 ;; org中可以运行代码
 (org-babel-do-load-languages
  'org-babel-load-languages
@@ -29,7 +32,9 @@
    (shell . t)
    (C . t)
    (emacs-lisp . t)
-   (js . t)))
+   (js . t)
+   (ledger . t)
+   (ditaa . t)))
 
 
 ;; 时间函数
@@ -37,7 +42,7 @@
   (list (format-time-string "%Y年") (format-time-string "%m月")))
 
 ;; 默认不分割标题
-(setq org-M-RET-may-split-line '((headline . ni)))
+(setq org-M-RET-may-split-line '((headline . nil)))
 
 (defun find-month-tree ()
   (let* ((path (get-year-and-month))
@@ -80,24 +85,28 @@
   ;; (push "~/Documents/org/capture/task.org" org-agenda-files)
   ;; (setq org-time-stamp-formats '("<%Y-%m-%d 周%u %H:%M>"))
   (add-to-list 'org-capture-templates '("o" "记录"))
-  (add-to-list 'org-capture-templates '("e" "每日"))
+(add-to-list 'org-capture-templates '("e" "每日"))
+(add-to-list 'org-capture-templates '("m" "理财"))
   ;; 命令捕获
   (push '("oc" "命令" plain (file "~/document/study/git/notes/system/command.org")  " | %U | %^{命令} | %^{描述} | %^{类别} |") org-capture-templates)
   ;; 想法捕获
-  (push '("oi" "想法" entry (file+headline "~/document/org/today-task/plan.org" "INBOX") "* %U %?\n") org-capture-templates)
+  (push '("oi" "想法" plain (file+headline "~/document/org/today-task/plan.org" "INBOX") "***** %U %?\n") org-capture-templates)
   ;; link模板
-  (push '("ol" "链接" entry (file+headline "~/document/org/link.org" "Links") "* %U %^{简介} \n [[%^{链接}][%^{名称}]]") org-capture-templates)
+  (push '("ol" "链接" plain (file+headline "~/document/org/link.org" "Links") "***** %U %^{简介} \n [[%^{链接}][%^{名称}]]") org-capture-templates)
   ;; 密码
-  (push '("op" "密码" entry (file "~/document/org/passwords.org.cpt") "* %U - %^{title} %^G\n\n  - 用户名: %^{用户名}\n  - 密码: %(get-or-create-password)":empty-lines 1 :kill-buffer t) org-capture-templates)
+  (push '("op" "密码" plain (file "~/document/org/passwords.org.cpt") "***** %U - %^{title} %^G\n\n  - 用户名: %^{用户名}\n  - 密码: %(get-or-create-password)":empty-lines 1 :kill-buffer t) org-capture-templates)
   ;; 笔记本
-  (push '("on" "笔记" entry (file "~/document/org/notes.org") "* %U %?\n") org-capture-templates)
+  (push '("on" "笔记" plain (file "~/document/org/notes.org") "***** %U %?\n") org-capture-templates)
   ;; 去做
-  (push '("ot" "TODO" entry (file+headline "~/document/org/today-task/plan.org" ",TODO") "* [TODO] %?\n") org-capture-templates)
+  (push '("ot" "TODO" plain (file+headline "~/document/org/today-task/plan.org" ",TODO") "***** [TODO] %?\n") org-capture-templates)
 
-  ;; 账本
-  (push '("eb" "账本" plain(file+function "~/document/org/billing.org" find-month-tree)" | %u | %^{类别} | %^{描述} | %^{金额} |" :kill-buffer t) org-capture-templates)
   ;; 跑步
-  (push '("er" "跑步" plain(file+function "~/document/org/running.org" find-month-tree)" | %u | %^{地点} | %^{里程} | %^{时间} |" :kill-buffer t) org-capture-templates)
+(push '("er" "跑步" plain(file+function "~/document/org/running.org" find-month-tree)" | %u | %^{地点} | %^{里程} | %^{时间} |" :kill-buffer t) org-capture-templates)
+
+;; 金额方面的capture
+(push '("mp" "支出" plain(file "~/document/org/billing.ledger") "%<%Y-%m-%d> %^{类别} \n Expenses:%^{种类(Food, Entertainment, Education, Clothes, work} \t %^{金额} CNY\n Assets:%^G%^G \n\n") org-capture-templates)
+(push '("mi" "收入" plain(file "~/document/org/billing.ledger") "%<%Y-%m-%d> %^{类别} \n Income:%^{种类} \t %^{金额} CNY\n Assets:%^G%^G \n\n") org-capture-templates)
+(push '("mz" "转账" plain(file "~/document/org/billing.ledger") "%<%Y-%m-%d>  转账 \n Assets:%^G%^G \n Assets:%^G%^G \t %^{金额} \n\n") org-capture-templates)
 
 ;; org美化
 (use-package org-superstar
@@ -107,7 +116,8 @@
 
 
 (setq org-agenda-files (list "~/document/org/today-task/plan.org"
-                     "~/document/org/today-task/task.org"))
+                             "~/document/org/today-task/task.org"
+                             "~/document/org/today-task/金额.org"))
 
   
 

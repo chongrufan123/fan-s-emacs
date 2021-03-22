@@ -1,3 +1,15 @@
+HTTP/1.1 200 OK
+Server: nginx/1.14.2
+Date: Mon, 22 Mar 2021 03:50:44 GMT
+Content-Type: application/octet-stream
+Content-Length: 85336
+Last-Modified: Thu, 24 Dec 2020 22:02:14 GMT
+Connection: keep-alive
+ETag: "5fe50fe6-14d58"
+Strict-Transport-Security: max-age=31536000
+X-TUNA-MIRROR-ID: nanomirrors
+Accept-Ranges: bytes
+
 (1
  (ace-window .
 	     [(0 9 0)
