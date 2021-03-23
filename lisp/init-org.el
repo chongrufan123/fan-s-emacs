@@ -104,8 +104,8 @@
 (push '("er" "跑步" plain(file+function "~/document/org/running.org" find-month-tree)" | %u | %^{地点} | %^{里程} | %^{时间} |" :kill-buffer t) org-capture-templates)
 
 ;; 金额方面的capture
-(push '("mp" "支出" plain(file "~/document/org/billing.ledger") "%<%Y-%m-%d> %^{类别} \n Expenses:%^{种类(Food, Entertainment, Education, Clothes, work} \t %^{金额} CNY\n Assets:%^G%^G \n\n") org-capture-templates)
-(push '("mi" "收入" plain(file "~/document/org/billing.ledger") "%<%Y-%m-%d> %^{类别} \n Income:%^{种类} \t %^{金额} CNY\n Assets:%^G%^G \n\n") org-capture-templates)
+(push '("mp" "支出" plain(file "~/document/org/billing.ledger") "%<%Y-%m-%d> %^{类别} \n Expenses:%^{种类(Food, Entertainment, Education, Clothes, work} \t %^{金额} CNY\n Assets:Checking:%^G \n\n") org-capture-templates)
+(push '("mi" "收入" plain(file "~/document/org/billing.ledger") "%<%Y-%m-%d> %^{类别} \n Income:%^{种类} \t %^{金额} CNY\n Assets:Checking%^G \n\n") org-capture-templates)
 (push '("mz" "转账" plain(file "~/document/org/billing.ledger") "%<%Y-%m-%d>  转账 \n Assets:%^G%^G \n Assets:%^G%^G \t %^{金额} \n\n") org-capture-templates)
 
 ;; org美化
