@@ -40,6 +40,7 @@
   :config
   (define-key leader-key (kbd "t e") 'toggle-company-english-helper))
 
+
 (use-package telega
   :load-path  "~/.emacs.d/site-lisp/telega.el"
   :commands (telega)

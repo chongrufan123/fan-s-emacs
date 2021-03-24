@@ -13,7 +13,9 @@
   "M-SPC e" "窗口配置"
   "M-SPC o" "每日任务"
   "M-SPC o p" "plan"
-  "M-SPC o t" "task")
+  "M-SPC o t" "task"
+  "M-SPC o c" "command"
+  "M-SPC o l" "link")
 ;;  "M-SPC o" "开启"
 ;;  "M-SPC t" "切换"
 ;;  "M-SPC w" "窗口"

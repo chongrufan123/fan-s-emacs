@@ -72,6 +72,9 @@
 (global-set-key (kbd "C-x /") (lambda() (interactive)(find-file "~/document/study/git/notes/other/emacs.org")))
 (global-set-key (kbd "M-SPC o t") (lambda() (interactive)(find-file "~/document/org/today-task/task.org")))
 (global-set-key (kbd "M-SPC o p") (lambda() (interactive)(find-file "~/document/org/today-task/plan.org")))
+(global-set-key (kbd "M-SPC o c") (lambda() (interactive)(find-file "~/document/study/git/notes/system/command.org")))
+(global-set-key (kbd "M-SPC o l") (lambda() (interactive)(find-file "~/document/org/link.org")))
+
 ;; 设置bookmark
 (use-package bookmark
   :ensure nil
