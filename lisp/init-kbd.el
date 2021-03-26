@@ -15,10 +15,11 @@
   "M-SPC o p" "plan"
   "M-SPC o t" "task"
   "M-SPC o c" "command"
-  "M-SPC o l" "link")
+  "M-SPC o l" "link"
+  "M-SPC z" "注释"
 ;;  "M-SPC o" "开启"
 ;;  "M-SPC t" "切换"
-;;  "M-SPC w" "窗口"
+ "M-SPC w" "窗口")
 ;;  "M-SPC c" "代码"
 ;;  "M-SPC w P" "交换窗口-上"
 ;;  "M-SPC w N" "交换窗口-下"
@@ -28,6 +29,7 @@
 (global-set-key (kbd "M-SPC") 'leader-key)
 (global-set-key (kbd "C-(") 'backward-sexp)
 (global-set-key (kbd "C-)") 'forward-sexp)
+(global-set-key (kbd "M-SPC z") 'comment-line)
 ;; 按键映射
 
 (provide 'init-kbd)

@@ -4,7 +4,9 @@
 ;;; Code:
 
 ;; 自动转变函数名
-(add-to-list 'load-path (expand-file-name "~/.emacs.d/site-lisp/insert-translated-name/"))
+(add-to-list 'load-path
+             (expand-file-name
+              "~/.emacs.d/site-lisp/insert-translated-name/"))
 (require 'insert-translated-name)
 (use-package insert-translated-name
   :load-path "/home/fan/.emacs.d/site-lisp/insert-translated-name"
@@ -17,5 +19,5 @@
 
 
 
-(provide 'init-programe)
+(provide 'init-program)
 ;;; init-program.el ends here

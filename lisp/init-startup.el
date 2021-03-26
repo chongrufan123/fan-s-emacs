@@ -64,7 +64,7 @@
 (setq-default tab-width 4)
 
 ;; 高亮显示当前行
- (global-hl-line-mode t)
+(global-hl-line-mode t)
 ;; (global-hl-line-mode -1)
 
 

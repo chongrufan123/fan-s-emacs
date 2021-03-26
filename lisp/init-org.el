@@ -106,7 +106,7 @@
 ;; 金额方面的capture
 (push '("mp" "支出" plain(file "~/document/org/billing.ledger") "%<%Y-%m-%d> %^{类别} \n Expenses:%^{种类(Food, Entertainment, Education, Clothes, work} \t %^{金额} CNY\n Assets:Checking:%^G \n\n") org-capture-templates)
 (push '("mi" "收入" plain(file "~/document/org/billing.ledger") "%<%Y-%m-%d> %^{类别} \n Income:%^{种类} \t %^{金额} CNY\n Assets:Checking%^G \n\n") org-capture-templates)
-(push '("mz" "转账" plain(file "~/document/org/billing.ledger") "%<%Y-%m-%d>  转账 \n Assets:%^G%^G \n Assets:%^G%^G \t %^{金额} \n\n") org-capture-templates)
+(push '("mz" "转账" plain(file "~/document/org/billing.ledger") "%<%Y-%m-%d>  转账 \n Assets:%^G%^G \n Assets:%^G%^G \t %^{金额} CNY \n\n") org-capture-templates)
 
 ;; org美化
 (use-package org-superstar

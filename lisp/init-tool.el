@@ -126,20 +126,54 @@
 
 
 ;; 窗口管理器
+
+(defun windmove-do-swap-window (dir &optional arg window)
+  "Move the buffer to the window at direction DIR.
+DIR, ARG, and WINDOW are handled as by `windmove-other-window-loc'.
+If no window is at direction DIR, an error is signaled."
+  (let ((other-window (windmove-find-other-window dir arg window)))
+    (cond ((null other-window)
+           (error "No window %s from selected window" dir))
+          ((and (window-minibuffer-p other-window)
+                (not (minibuffer-window-active-p other-window)))
+           (error "Minibuffer is inactive"))
+          (t
+           (let ( (old-buffer (window-buffer window)) )
+         (set-window-buffer window (window-buffer other-window))
+         (set-window-buffer other-window old-buffer)
+         (select-window other-window))))))
+
+(defun window-move-up (&optional arg)
+  (interactive "P")
+  (windmove-do-swap-window 'up arg))
+
+(defun window-move-down (&optional arg)
+  (interactive "P")
+  (windmove-do-swap-window 'down arg))
+
+(defun window-move-left (&optional arg)
+  (interactive "P")
+  (windmove-do-swap-window 'left arg))
+
+(defun window-move-right (&optional arg)
+  (interactive "P")
+  (windmove-do-swap-window 'right arg))
+
+
 (use-package windmove
-  :defer 2
+  :defer 0
   :ensure t 
   :init (windmove-default-keybindings) 
   :config 
   :bind (:map leader-key
-              ("w f" . #'windmove-right) 
-              ("w b" . #'windmove-left) 
-              ("w p" . #'windmove-up) 
-              ("w n" . #'windmove-down) 
-              ("w F" . #'window-move-right) 
-              ("w B" . #'window-move-left) 
-              ("w P" . #'window-move-up) 
-              ("w N" . #'window-move-down)
+              ;("w f" . #'windmove-right) 
+              ;("w b" . #'windmove-left) 
+              ;("w p" . #'windmove-up) 
+              ;("w n" . #'windmove-down) 
+              ("w f" . #'window-move-right) 
+              ("w b" . #'window-move-left) 
+              ("w p" . #'window-move-up) 
+              ("w n" . #'window-move-down)
               ("w h" . #'enlarge-window-horizontally)
               ("w l" . #'shrink-window-horizontally)
               ("w j" . #'enlarge-window)

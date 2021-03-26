@@ -10,6 +10,7 @@
              "~/.emacs.d/theme/")
 (add-to-list 'load-path
              "~/.emacs.d/elpa/")
+
 ;;(defun add-subdirs-to-load-path(dir)
  ;;   (let ((default-directory (file-name-as-directory dir)))
 ;;  (add-to-list 'load-path dir)
@@ -22,11 +23,15 @@
 (require 'init-elpa)
 (require 'init-kbd)
 (require 'init-startup)
-(require 'init-package)
 (require 'init-ui)
 (require 'init-tool)
 (require 'init-org)
+(require 'init-python)
+(require 'init-C)
 (require 'init-vision)
+(require 'init-package)
+(require 'init-program)
+
 (add-to-list 'load-path
              "~/.emacs.d/site-lisp/ledger-mode/")
 (require 'ledger-mode)
