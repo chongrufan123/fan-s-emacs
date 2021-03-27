@@ -4,7 +4,7 @@
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
 (("org-capture-last-stored"
  (filename . "~/document/org/billing.ledger")
- (front-context-string . "2021-03-26  转账 \n")
+ (front-context-string . "2021-03-27 饮料 \n ")
  (rear-context-string . "Checking:中国银行: \n")
- (position . 2220))
+ (position . 3065))
 )
