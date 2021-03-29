@@ -82,6 +82,11 @@
      ("C-x r d" . bookmark-delete)
      ("C-x r j" . bookmark-jump)))
 
+(setq auto-mode-alist
+      (append
+       '(("\\.h\\'" . c++-mode))
+       auto-mode-alist))
+
 
 (provide 'init-startup)
 ;;; init-startup ends here
