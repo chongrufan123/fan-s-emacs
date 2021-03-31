@@ -103,6 +103,9 @@
   ;; 跑步
 (push '("er" "跑步" plain(file+function "~/document/org/running.org" find-month-tree)" | %u | %^{地点} | %^{里程} | %^{时间} |" :kill-buffer t) org-capture-templates)
 
+;;体重
+(push '("ew" "体重" plain(file+function "~/document/org/weight.org" find-month-tree)" | %u | %^{体重} |" :kill-buffer t) org-capture-templates)
+
 ;; 好句
 (push '("os" "好句" plain (file "~/document/org/good_sentence.org") "***** %u %^{句子} \t %^g") org-capture-templates)
 
