@@ -800,3 +800,35 @@ receiving...
 (AutoLog) Called: ThreadingEPCHandler._send('return', 103, None)
 (AutoLog) Returns: ThreadingEPCHandler._send(...) = None
 (AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 29; data = b'(call 104 update_views (""))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 104 update_views (""))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(104, Symbol('update_views'), [''])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 104, None]
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._send('return', 104, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 29; data = b'(call 105 update_views (""))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 105 update_views (""))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(105, Symbol('update_views'), [''])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 105, None]
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._send('return', 105, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 29; data = b'(call 106 update_views (""))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 106 update_views (""))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(106, Symbol('update_views'), [''])
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 106, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 106, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 26; data = b'(call 107 kill_emacs nil)\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 107 kill_emacs nil)\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(107, Symbol('kill_emacs'), [])
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 107, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 107, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None

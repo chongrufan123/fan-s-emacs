@@ -94,7 +94,7 @@
   ;; link模板
   (push '("ol" "链接" plain (file+headline "~/document/org/link.org" "Links") "***** %U %^{简介} \n [[%^{链接}][%^{名称}]]") org-capture-templates)
   ;; 密码
-  (push '("op" "密码" plain (file "~/document/org/passwords.org.cpt") "***** %U - %^{title} %^G\n\n  - 用户名: %^{用户名}\n  - 密码: %(get-or-create-password)":empty-lines 1 :kill-buffer t) org-capture-templates)
+  (push '("op" "密码" plain (file "~/document/org/passwords.org.cpt") "* %U - %^{title} %^G\n\n  - 用户名: %^{用户名}\n  - 密码: %^{密码}" :kill-buffer t) org-capture-templates)
   ;; 笔记本
   (push '("on" "笔记" plain (file "~/document/org/notes.org") "***** %U %?\n") org-capture-templates)
   ;; 去做
