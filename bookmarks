@@ -4,7 +4,7 @@
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
 (("org-capture-last-stored"
  (filename . "~/document/org/running.org")
- (front-context-string . " | [2021-04-01 四")
- (rear-context-string . " 5.16 | 30:57 |\n")
- (position . 423))
+ (front-context-string . " | [2021-04-02 五")
+ (rear-context-string . " 37:00 |\n** 04月\n")
+ (position . 470))
 )
