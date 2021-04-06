@@ -3,8 +3,8 @@
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
 (("org-capture-last-stored"
- (filename . "~/document/org/running.org")
- (front-context-string . " | [2021-04-02 五")
- (rear-context-string . " 37:00 |\n** 04月\n")
- (position . 470))
+ (filename . "~/document/study/git/notes/system/command.org")
+ (front-context-string . " | [2021-04-05 一")
+ (rear-context-string . "x | 代码流动 | 玩具 |\n")
+ (position . 376))
 )

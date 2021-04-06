@@ -101,7 +101,7 @@
   (push '("ot" "TODO" plain (file+headline "~/document/org/today-task/plan.org" ",TODO") "***** [TODO] %?\n") org-capture-templates)
 
   ;; 跑步
-(push '("er" "跑步" plain(file+function "~/document/org/running.org" find-month-tree)" | %u | %^{地点} | %^{里程} | %^{时间} |" :kill-buffer t) org-capture-templates)
+(push '("er" "跑步" plain(file+function "~/document/org/running.org" find-month-tree)" | %u | %^{地点} | %^{里程} | %^{时间} | =$4/$3;T |" :kill-buffer t) org-capture-templates)
 
 ;;体重
 (push '("ew" "体重" plain(file+function "~/document/org/weight.org" find-month-tree)" | %u | %^{体重} |" :kill-buffer t) org-capture-templates)
