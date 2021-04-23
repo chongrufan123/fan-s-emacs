@@ -2,9 +2,14 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("org-capture-last-stored"
- (filename . "~/document/study/git/notes/system/command.org")
- (front-context-string . " | [2021-04-05 一")
- (rear-context-string . "x | 代码流动 | 玩具 |\n")
- (position . 376))
+(("org-refile-last-stored"
+ (filename . "~/document/org/today-task/plan.org")
+ (front-context-string . "** [2021-04-17 六")
+ (rear-context-string . " 23:08] 去办公室数板子\n")
+ (position . 4306))
+("org-capture-last-stored"
+ (filename . "~/document/org/running.org")
+ (front-context-string . " | [2021-04-23 五")
+ (rear-context-string . "32 | =$4/$3;T |\n")
+ (position . 1298))
 )

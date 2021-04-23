@@ -115,7 +115,11 @@
 (use-package ace-window
   :bind (("M-o" . 'ace-window)))
 
+;; latex相关
 
+;(add-hook 'LaTeX-mode-hook 'turn-on-cdlatex)
+;(add-hook 'LaTeX-mode-hook 'turn-on-reftex)
+(setq outline-minor-mode-prefix "^C@")
 
 (provide 'init-package)
 ;;; init-package ends here

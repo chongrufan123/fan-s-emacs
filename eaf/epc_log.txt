@@ -1,117 +1,129 @@
-(AutoLog) Called: EPCClientHandler._send('call', 1, Symbol('eval-in-emacs'), ['eaf--first-start', 'NTcyODE=', 'VHJ1ZQ=='])
+(AutoLog) Called: EPCClientHandler._send('call', 1, Symbol('eval-in-emacs'), ['eaf--first-start', 'MzYzNzE=', 'VHJ1ZQ=='])
 (AutoLog) Returns: EPCClientHandler._send(...) = None
 (AutoLog) Called: ThreadingEPCHandler.setup()
 (AutoLog) Returns: ThreadingEPCHandler.setup(...) = None
 (AutoLog) Called: ThreadingEPCHandler.handle()
 receiving...
-received: length = 123; data = b'(call 5 new_buffer ("5403-6fb4-8e65-5b0a-9153-27ff-e349" "/home/fan/document/org/today-task/task.org" "org-previewer" ""))\n'
-(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 5 new_buffer ("5403-6fb4-8e65-5b0a-9153-27ff-e349" "/home/fan/document/org/today-task/task.org" "org-previewer" ""))\n')
+received: length = 101; data = b'(call 5 new_buffer ("272f-e058-87e2-b6c8-f597-2171-7432" "/home/fan/test/test.pdf" "pdf-viewer" ""))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 5 new_buffer ("272f-e058-87e2-b6c8-f597-2171-7432" "/home/fan/test/test.pdf" "pdf-viewer" ""))\n')
 receiving...
-(AutoLog) Called: ThreadingEPCHandler._handle_call(5, Symbol('new_buffer'), ['5403-6fb4-8e65-5b0a-9153-27ff-e349', '/home/fan/document/org/today-task/task.org', 'org-previewer', ''])
-(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 5, None]
-(AutoLog) Called: ThreadingEPCHandler._send('return', 5, None)
-(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
-(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+(AutoLog) Called: ThreadingEPCHandler._handle_call(5, Symbol('new_buffer'), ['272f-e058-87e2-b6c8-f597-2171-7432', '/home/fan/test/test.pdf', 'pdf-viewer', ''])
 received: length = 15; data = b'(return 1 nil)\n'
 receiving...
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 5, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 5, None)
 (AutoLog) Called: EPCClientHandler._handle(b'(return 1 nil)\n')
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
 (AutoLog) Returns: EPCClientHandler._handle(...) = None
-received: length = 84; data = b'(call 6 update_views ("5403-6fb4-8e65-5b0a-9153-27ff-e349:12583124:954:0:966:951"))\n'
-(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 6 update_views ("5403-6fb4-8e65-5b0a-9153-27ff-e349:12583124:954:0:966:951"))\n')
-receiving...
-(AutoLog) Called: ThreadingEPCHandler._handle_call(6, Symbol('update_views'), ['5403-6fb4-8e65-5b0a-9153-27ff-e349:12583124:954:0:966:951'])
+received: length = 84; data = b'(call 6 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:953"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 6 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:953"))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(6, Symbol('update_views'), ['272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:953'])
 (AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 6, None]
+receiving...
 (AutoLog) Called: ThreadingEPCHandler._send('return', 6, None)
 (AutoLog) Returns: ThreadingEPCHandler._send(...) = None
 (AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
-received: length = 84; data = b'(call 7 update_views ("5403-6fb4-8e65-5b0a-9153-27ff-e349:12583124:954:0:966:946"))\n'
-(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 7 update_views ("5403-6fb4-8e65-5b0a-9153-27ff-e349:12583124:954:0:966:946"))\n')
+received: length = 84; data = b'(call 7 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 7 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949"))\n')
 receiving...
-(AutoLog) Called: ThreadingEPCHandler._handle_call(7, Symbol('update_views'), ['5403-6fb4-8e65-5b0a-9153-27ff-e349:12583124:954:0:966:946'])
+(AutoLog) Called: ThreadingEPCHandler._handle_call(7, Symbol('update_views'), ['272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949'])
 (AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 7, None]
 (AutoLog) Called: ThreadingEPCHandler._send('return', 7, None)
 (AutoLog) Returns: ThreadingEPCHandler._send(...) = None
 (AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
-received: length = 109; data = b'(call 8 update_buffer_with_url ("app.org-previewer.buffer" "/home/fan/document/org/today-task/task.org" ""))\n'
-(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 8 update_buffer_with_url ("app.org-previewer.buffer" "/home/fan/document/org/today-task/task.org" ""))\n')
+received: length = 84; data = b'(call 8 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 8 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949"))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(8, Symbol('update_views'), ['272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949'])
 receiving...
-(AutoLog) Called: ThreadingEPCHandler._handle_call(8, Symbol('update_buffer_with_url'), ['app.org-previewer.buffer', '/home/fan/document/org/today-task/task.org', ''])
 (AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 8, None]
 (AutoLog) Called: ThreadingEPCHandler._send('return', 8, None)
 (AutoLog) Returns: ThreadingEPCHandler._send(...) = None
 (AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
-received: length = 109; data = b'(call 9 update_buffer_with_url ("app.org-previewer.buffer" "/home/fan/document/org/today-task/task.org" ""))\n'
-(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 9 update_buffer_with_url ("app.org-previewer.buffer" "/home/fan/document/org/today-task/task.org" ""))\n')
+received: length = 84; data = b'(call 9 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 9 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949"))\n')
 receiving...
-(AutoLog) Called: ThreadingEPCHandler._handle_call(9, Symbol('update_buffer_with_url'), ['app.org-previewer.buffer', '/home/fan/document/org/today-task/task.org', ''])
+(AutoLog) Called: ThreadingEPCHandler._handle_call(9, Symbol('update_views'), ['272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949'])
 (AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 9, None]
 (AutoLog) Called: ThreadingEPCHandler._send('return', 9, None)
 (AutoLog) Returns: ThreadingEPCHandler._send(...) = None
 (AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
-received: length = 85; data = b'(call 10 update_views ("5403-6fb4-8e65-5b0a-9153-27ff-e349:12583124:954:0:966:946"))\n'
-(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 10 update_views ("5403-6fb4-8e65-5b0a-9153-27ff-e349:12583124:954:0:966:946"))\n')
-(AutoLog) Called: ThreadingEPCHandler._handle_call(10, Symbol('update_views'), ['5403-6fb4-8e65-5b0a-9153-27ff-e349:12583124:954:0:966:946'])
+received: length = 85; data = b'(call 10 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 10 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949"))\n')
 receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(10, Symbol('update_views'), ['272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949'])
 (AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 10, None]
 (AutoLog) Called: ThreadingEPCHandler._send('return', 10, None)
 (AutoLog) Returns: ThreadingEPCHandler._send(...) = None
 (AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
-(AutoLog) Called: EPCClientHandler._send('call', 2, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'NTQwMy02ZmI0LThlNjUtNWIwYS05MTUzLTI3ZmYtZTM0OQ=='])
-(AutoLog) Returns: EPCClientHandler._send(...) = None
-received: length = 13; data = b'(return 2 t)\n'
-receiving...
-(AutoLog) Called: EPCClientHandler._handle(b'(return 2 t)\n')
-(AutoLog) Returns: EPCClientHandler._handle(...) = None
-(AutoLog) Called: EPCClientHandler._send('call', 3, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'NTQwMy02ZmI0LThlNjUtNWIwYS05MTUzLTI3ZmYtZTM0OQ=='])
-(AutoLog) Returns: EPCClientHandler._send(...) = None
-received: length = 13; data = b'(return 3 t)\n'
-receiving...
-(AutoLog) Called: EPCClientHandler._handle(b'(return 3 t)\n')
-(AutoLog) Returns: EPCClientHandler._handle(...) = None
-received: length = 28; data = b'(call 11 update_views (""))\n'
-(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 11 update_views (""))\n')
-(AutoLog) Called: ThreadingEPCHandler._handle_call(11, Symbol('update_views'), [''])
+received: length = 85; data = b'(call 11 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:697"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 11 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:697"))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(11, Symbol('update_views'), ['272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:697'])
 (AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 11, None]
 (AutoLog) Called: ThreadingEPCHandler._send('return', 11, None)
 (AutoLog) Returns: ThreadingEPCHandler._send(...) = None
-(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
 receiving...
-received: length = 28; data = b'(call 12 update_views (""))\n'
-(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 12 update_views (""))\n')
-(AutoLog) Called: ThreadingEPCHandler._handle_call(12, Symbol('update_views'), [''])
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 85; data = b'(call 12 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 12 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949"))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(12, Symbol('update_views'), ['272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949'])
+receiving...
 (AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 12, None]
 (AutoLog) Called: ThreadingEPCHandler._send('return', 12, None)
 (AutoLog) Returns: ThreadingEPCHandler._send(...) = None
 (AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 2, Symbol('eval-in-emacs'), ['eaf--show-message', 'RGV0ZWN0ZWQgdGhhdCAvaG9tZS9mYW4vdGVzdC90ZXN0LnBkZiBoYXMgYmVlbiBjaGFuZ2VkLiBSZWZyZXNoaW5nIGJ1ZmZlci4uLg=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 100; data = b'(return 2 "[EAF/nil] Detected that /home/fan/test/test.pdf has been changed. Refreshing buffer...")\n'
 receiving...
-received: length = 28; data = b'(call 13 update_views (""))\n'
-(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 13 update_views (""))\n')
-(AutoLog) Called: ThreadingEPCHandler._handle_call(13, Symbol('update_views'), [''])
+(AutoLog) Called: EPCClientHandler._handle(b'(return 2 "[EAF/nil] Detected that /home/fan/test/test.pdf has been changed. Refreshing buffer...")\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 3, Symbol('eval-in-emacs'), ['eaf--show-message', 'RGV0ZWN0ZWQgdGhhdCAvaG9tZS9mYW4vdGVzdC90ZXN0LnBkZiBoYXMgYmVlbiBjaGFuZ2VkLiBSZWZyZXNoaW5nIGJ1ZmZlci4uLg=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 100; data = b'(return 3 "[EAF/nil] Detected that /home/fan/test/test.pdf has been changed. Refreshing buffer...")\n'
 receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 3 "[EAF/nil] Detected that /home/fan/test/test.pdf has been changed. Refreshing buffer...")\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 85; data = b'(call 13 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 13 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949"))\n')
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(13, Symbol('update_views'), ['272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949'])
 (AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 13, None]
 (AutoLog) Called: ThreadingEPCHandler._send('return', 13, None)
 (AutoLog) Returns: ThreadingEPCHandler._send(...) = None
 (AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
-received: length = 28; data = b'(call 14 update_views (""))\n'
-(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 14 update_views (""))\n')
-(AutoLog) Called: ThreadingEPCHandler._handle_call(14, Symbol('update_views'), [''])
+received: length = 85; data = b'(call 14 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:697"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 14 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:697"))\n')
 receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(14, Symbol('update_views'), ['272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:697'])
 (AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 14, None]
 (AutoLog) Called: ThreadingEPCHandler._send('return', 14, None)
 (AutoLog) Returns: ThreadingEPCHandler._send(...) = None
 (AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
-received: length = 28; data = b'(call 15 update_views (""))\n'
-(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 15 update_views (""))\n')
-(AutoLog) Called: ThreadingEPCHandler._handle_call(15, Symbol('update_views'), [''])
+received: length = 85; data = b'(call 15 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 15 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949"))\n')
 receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(15, Symbol('update_views'), ['272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949'])
 (AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 15, None]
 (AutoLog) Called: ThreadingEPCHandler._send('return', 15, None)
 (AutoLog) Returns: ThreadingEPCHandler._send(...) = None
 (AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
-received: length = 28; data = b'(call 16 update_views (""))\n'
-(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 16 update_views (""))\n')
+(AutoLog) Called: EPCClientHandler._send('call', 4, Symbol('eval-in-emacs'), ['eaf--show-message', 'RGV0ZWN0ZWQgdGhhdCAvaG9tZS9mYW4vdGVzdC90ZXN0LnBkZiBoYXMgYmVlbiBjaGFuZ2VkLiBSZWZyZXNoaW5nIGJ1ZmZlci4uLg=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 100; data = b'(return 4 "[EAF/nil] Detected that /home/fan/test/test.pdf has been changed. Refreshing buffer...")\n'
 receiving...
-(AutoLog) Called: ThreadingEPCHandler._handle_call(16, Symbol('update_views'), [''])
+(AutoLog) Called: EPCClientHandler._handle(b'(return 4 "[EAF/nil] Detected that /home/fan/test/test.pdf has been changed. Refreshing buffer...")\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 5, Symbol('eval-in-emacs'), ['eaf--show-message', 'RGV0ZWN0ZWQgdGhhdCAvaG9tZS9mYW4vdGVzdC90ZXN0LnBkZiBoYXMgYmVlbiBjaGFuZ2VkLiBSZWZyZXNoaW5nIGJ1ZmZlci4uLg=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 100; data = b'(return 5 "[EAF/nil] Detected that /home/fan/test/test.pdf has been changed. Refreshing buffer...")\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 5 "[EAF/nil] Detected that /home/fan/test/test.pdf has been changed. Refreshing buffer...")\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 85; data = b'(call 16 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 16 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949"))\n')
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(16, Symbol('update_views'), ['272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949'])
 (AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 16, None]
 (AutoLog) Called: ThreadingEPCHandler._send('return', 16, None)
 (AutoLog) Returns: ThreadingEPCHandler._send(...) = None
@@ -126,24 +138,24 @@ receiving...
 (AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
 received: length = 28; data = b'(call 18 update_views (""))\n'
 (AutoLog) Called: ThreadingEPCHandler._handle(b'(call 18 update_views (""))\n')
-(AutoLog) Called: ThreadingEPCHandler._handle_call(18, Symbol('update_views'), [''])
 receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(18, Symbol('update_views'), [''])
 (AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 18, None]
 (AutoLog) Called: ThreadingEPCHandler._send('return', 18, None)
 (AutoLog) Returns: ThreadingEPCHandler._send(...) = None
 (AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
-received: length = 28; data = b'(call 19 update_views (""))\n'
-(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 19 update_views (""))\n')
+received: length = 85; data = b'(call 19 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:953"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 19 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:953"))\n')
 receiving...
-(AutoLog) Called: ThreadingEPCHandler._handle_call(19, Symbol('update_views'), [''])
+(AutoLog) Called: ThreadingEPCHandler._handle_call(19, Symbol('update_views'), ['272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:953'])
 (AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 19, None]
 (AutoLog) Called: ThreadingEPCHandler._send('return', 19, None)
 (AutoLog) Returns: ThreadingEPCHandler._send(...) = None
 (AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
-received: length = 28; data = b'(call 20 update_views (""))\n'
-(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 20 update_views (""))\n')
+received: length = 85; data = b'(call 20 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 20 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949"))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(20, Symbol('update_views'), ['272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949'])
 receiving...
-(AutoLog) Called: ThreadingEPCHandler._handle_call(20, Symbol('update_views'), [''])
 (AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 20, None]
 (AutoLog) Called: ThreadingEPCHandler._send('return', 20, None)
 (AutoLog) Returns: ThreadingEPCHandler._send(...) = None
@@ -151,14 +163,392 @@ receiving...
 received: length = 28; data = b'(call 21 update_views (""))\n'
 (AutoLog) Called: ThreadingEPCHandler._handle(b'(call 21 update_views (""))\n')
 (AutoLog) Called: ThreadingEPCHandler._handle_call(21, Symbol('update_views'), [''])
+receiving...
 (AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 21, None]
 (AutoLog) Called: ThreadingEPCHandler._send('return', 21, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 28; data = b'(call 22 update_views (""))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 22 update_views (""))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(22, Symbol('update_views'), [''])
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 22, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 22, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 28; data = b'(call 23 update_views (""))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 23 update_views (""))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(23, Symbol('update_views'), [''])
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 23, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 23, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 28; data = b'(call 24 update_views (""))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 24 update_views (""))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(24, Symbol('update_views'), [''])
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 24, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 24, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 85; data = b'(call 25 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:953"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 25 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:953"))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(25, Symbol('update_views'), ['272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:953'])
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 25, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 25, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 85; data = b'(call 26 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 26 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949"))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(26, Symbol('update_views'), ['272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949'])
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 26, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 26, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 85; data = b'(call 27 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 27 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949"))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(27, Symbol('update_views'), ['272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949'])
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 27, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 27, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 85; data = b'(call 28 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:697"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 28 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:697"))\n')
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(28, Symbol('update_views'), ['272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:697'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 28, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 28, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 85; data = b'(call 29 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 29 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949"))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(29, Symbol('update_views'), ['272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949'])
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 29, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 29, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 6, Symbol('eval-in-emacs'), ['eaf--show-message', 'RGV0ZWN0ZWQgdGhhdCAvaG9tZS9mYW4vdGVzdC90ZXN0LnBkZiBoYXMgYmVlbiBjaGFuZ2VkLiBSZWZyZXNoaW5nIGJ1ZmZlci4uLg=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 100; data = b'(return 6 "[EAF/nil] Detected that /home/fan/test/test.pdf has been changed. Refreshing buffer...")\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 6 "[EAF/nil] Detected that /home/fan/test/test.pdf has been changed. Refreshing buffer...")\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 7, Symbol('eval-in-emacs'), ['eaf--show-message', 'RGV0ZWN0ZWQgdGhhdCAvaG9tZS9mYW4vdGVzdC90ZXN0LnBkZiBoYXMgYmVlbiBjaGFuZ2VkLiBSZWZyZXNoaW5nIGJ1ZmZlci4uLg=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 100; data = b'(return 7 "[EAF/nil] Detected that /home/fan/test/test.pdf has been changed. Refreshing buffer...")\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 7 "[EAF/nil] Detected that /home/fan/test/test.pdf has been changed. Refreshing buffer...")\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 28; data = b'(call 30 update_views (""))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 30 update_views (""))\n')
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(30, Symbol('update_views'), [''])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 30, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 30, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+received: length = 28; data = b'(call 31 update_views (""))\n'
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 31 update_views (""))\n')
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(31, Symbol('update_views'), [''])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 31, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 31, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 85; data = b'(call 32 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:953"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 32 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:953"))\n')
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(32, Symbol('update_views'), ['272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:953'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 32, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 32, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 85; data = b'(call 33 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 33 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949"))\n')
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(33, Symbol('update_views'), ['272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 33, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 33, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 85; data = b'(call 34 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 34 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949"))\n')
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(34, Symbol('update_views'), ['272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 34, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 34, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 85; data = b'(call 35 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 35 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949"))\n')
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(35, Symbol('update_views'), ['272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 35, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 35, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 85; data = b'(call 36 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 36 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949"))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(36, Symbol('update_views'), ['272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 36, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 36, None)
 receiving...
 (AutoLog) Returns: ThreadingEPCHandler._send(...) = None
 (AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
-(AutoLog) Returns: ThreadingEPCHandler.handle(...) = None
-(AutoLog) Called: ThreadingEPCHandler.finish()
-(AutoLog) Returns: ThreadingEPCHandler.finish(...) = None
-(AutoLog) Returns: EPCClientHandler.handle(...) = None
-(AutoLog) Called: EPCClientHandler.finish()
-(AutoLog) Returns: EPCClientHandler.finish(...) = None
+received: length = 85; data = b'(call 37 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 37 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949"))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(37, Symbol('update_views'), ['272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949'])
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 37, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 37, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 85; data = b'(call 38 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 38 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949"))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(38, Symbol('update_views'), ['272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 38, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 38, None)
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 85; data = b'(call 39 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 39 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949"))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(39, Symbol('update_views'), ['272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949'])
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 39, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 39, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 85; data = b'(call 40 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:697"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 40 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:697"))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(40, Symbol('update_views'), ['272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:697'])
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 40, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 40, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 85; data = b'(call 41 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 41 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949"))\n')
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(41, Symbol('update_views'), ['272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 41, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 41, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 8, Symbol('eval-in-emacs'), ['eaf--show-message', 'RGV0ZWN0ZWQgdGhhdCAvaG9tZS9mYW4vdGVzdC90ZXN0LnBkZiBoYXMgYmVlbiBjaGFuZ2VkLiBSZWZyZXNoaW5nIGJ1ZmZlci4uLg=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 100; data = b'(return 8 "[EAF/nil] Detected that /home/fan/test/test.pdf has been changed. Refreshing buffer...")\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 8 "[EAF/nil] Detected that /home/fan/test/test.pdf has been changed. Refreshing buffer...")\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 9, Symbol('eval-in-emacs'), ['eaf--show-message', 'RGV0ZWN0ZWQgdGhhdCAvaG9tZS9mYW4vdGVzdC90ZXN0LnBkZiBoYXMgYmVlbiBjaGFuZ2VkLiBSZWZyZXNoaW5nIGJ1ZmZlci4uLg=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 100; data = b'(return 9 "[EAF/nil] Detected that /home/fan/test/test.pdf has been changed. Refreshing buffer...")\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 9 "[EAF/nil] Detected that /home/fan/test/test.pdf has been changed. Refreshing buffer...")\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 85; data = b'(call 42 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 42 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949"))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(42, Symbol('update_views'), ['272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949'])
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 42, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 42, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 85; data = b'(call 43 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:697"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 43 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:697"))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(43, Symbol('update_views'), ['272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:697'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 43, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 43, None)
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 85; data = b'(call 44 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 44 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949"))\n')
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(44, Symbol('update_views'), ['272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 44, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 44, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 10, Symbol('eval-in-emacs'), ['eaf--show-message', 'RGV0ZWN0ZWQgdGhhdCAvaG9tZS9mYW4vdGVzdC90ZXN0LnBkZiBoYXMgYmVlbiBjaGFuZ2VkLiBSZWZyZXNoaW5nIGJ1ZmZlci4uLg=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 101; data = b'(return 10 "[EAF/nil] Detected that /home/fan/test/test.pdf has been changed. Refreshing buffer...")\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 10 "[EAF/nil] Detected that /home/fan/test/test.pdf has been changed. Refreshing buffer...")\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 11, Symbol('eval-in-emacs'), ['eaf--show-message', 'RGV0ZWN0ZWQgdGhhdCAvaG9tZS9mYW4vdGVzdC90ZXN0LnBkZiBoYXMgYmVlbiBjaGFuZ2VkLiBSZWZyZXNoaW5nIGJ1ZmZlci4uLg=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 101; data = b'(return 11 "[EAF/nil] Detected that /home/fan/test/test.pdf has been changed. Refreshing buffer...")\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 11 "[EAF/nil] Detected that /home/fan/test/test.pdf has been changed. Refreshing buffer...")\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 85; data = b'(call 45 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 45 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949"))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(45, Symbol('update_views'), ['272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949'])
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 45, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 45, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 85; data = b'(call 46 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 46 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949"))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(46, Symbol('update_views'), ['272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949'])
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 46, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 46, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 85; data = b'(call 47 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 47 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949"))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(47, Symbol('update_views'), ['272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949'])
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 47, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 47, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 85; data = b'(call 48 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 48 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949"))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(48, Symbol('update_views'), ['272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949'])
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 48, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 48, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 85; data = b'(call 49 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 49 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949"))\n')
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(49, Symbol('update_views'), ['272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 49, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 49, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 85; data = b'(call 50 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 50 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949"))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(50, Symbol('update_views'), ['272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949'])
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 50, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 50, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 28; data = b'(call 51 update_views (""))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 51 update_views (""))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(51, Symbol('update_views'), [''])
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 51, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 51, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 28; data = b'(call 52 update_views (""))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 52 update_views (""))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(52, Symbol('update_views'), [''])
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 52, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 52, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 85; data = b'(call 53 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:953"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 53 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:953"))\n')
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(53, Symbol('update_views'), ['272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:953'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 53, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 53, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 85; data = b'(call 54 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 54 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949"))\n')
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(54, Symbol('update_views'), ['272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 54, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 54, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 85; data = b'(call 55 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 55 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949"))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(55, Symbol('update_views'), ['272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 55, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 55, None)
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 85; data = b'(call 56 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:697"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 56 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:697"))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(56, Symbol('update_views'), ['272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:697'])
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 56, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 56, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 85; data = b'(call 57 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 57 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949"))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(57, Symbol('update_views'), ['272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 57, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 57, None)
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 12, Symbol('eval-in-emacs'), ['eaf--show-message', 'RGV0ZWN0ZWQgdGhhdCAvaG9tZS9mYW4vdGVzdC90ZXN0LnBkZiBoYXMgYmVlbiBjaGFuZ2VkLiBSZWZyZXNoaW5nIGJ1ZmZlci4uLg=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 101; data = b'(return 12 "[EAF/nil] Detected that /home/fan/test/test.pdf has been changed. Refreshing buffer...")\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 12 "[EAF/nil] Detected that /home/fan/test/test.pdf has been changed. Refreshing buffer...")\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 13, Symbol('eval-in-emacs'), ['eaf--show-message', 'RGV0ZWN0ZWQgdGhhdCAvaG9tZS9mYW4vdGVzdC90ZXN0LnBkZiBoYXMgYmVlbiBjaGFuZ2VkLiBSZWZyZXNoaW5nIGJ1ZmZlci4uLg=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 101; data = b'(return 13 "[EAF/nil] Detected that /home/fan/test/test.pdf has been changed. Refreshing buffer...")\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 13 "[EAF/nil] Detected that /home/fan/test/test.pdf has been changed. Refreshing buffer...")\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 85; data = b'(call 58 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 58 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949"))\n')
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(58, Symbol('update_views'), ['272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:949'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 58, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 58, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 85; data = b'(call 59 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:445"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 59 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:445"))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(59, Symbol('update_views'), ['272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:445'])
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 59, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 59, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 85; data = b'(call 60 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:445"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 60 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:445"))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(60, Symbol('update_views'), ['272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:445'])
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 60, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 60, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 85; data = b'(call 61 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:837"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 61 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:837"))\n')
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(61, Symbol('update_views'), ['272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:837'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 61, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 61, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 85; data = b'(call 62 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:837"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 62 update_views ("272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:837"))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(62, Symbol('update_views'), ['272f-e058-87e2-b6c8-f597-2171-7432:14680276:954:0:966:837'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 62, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 62, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+receiving...
+received: length = 25; data = b'(call 63 kill_emacs nil)\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 63 kill_emacs nil)\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(63, Symbol('kill_emacs'), [])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 63, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 63, None)
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None

@@ -31,6 +31,7 @@
 (require 'init-vision)
 (require 'init-package)
 (require 'init-program)
+; (require 'cdlatex)
 
 (add-to-list 'load-path
              "~/.emacs.d/site-lisp/ledger-mode/")

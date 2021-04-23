@@ -14,7 +14,7 @@
   ("M-H" . 'org-shiftmetaleft)
   ("M-L" . 'org-shiftmetaright)
   :custom
-  (org-todo-keywords '((sequence "[TODO](t)" "|" "[done](d@/!)" "[cancel](c@/!)")))
+  (org-todo-keywords '((sequence "[TODO](t)" "|" "[done](d@/!)" n"[cancel](c@/!)")))
   :config
   (setq org-todo-keyword-faces '(("[学习]" . (:foreground "white" :background "#2ECC71" :weight bold))
 								 ("[工作]" . (:foreground "white" :background "#F1C40F" :weight bold))
@@ -81,24 +81,25 @@
 ;;  :after org
 ;;  :config
     ;; org-capture
-  (setq org-capture-templates nil)
+(setq org-capture-templates nil)
   ;; (push "~/Documents/org/capture/task.org" org-agenda-files)
   ;; (setq org-time-stamp-formats '("<%Y-%m-%d 周%u %H:%M>"))
-  (add-to-list 'org-capture-templates '("o" "记录"))
+(add-to-list 'org-capture-templates '("o" "记录"))
 (add-to-list 'org-capture-templates '("e" "每日"))
 (add-to-list 'org-capture-templates '("m" "理财"))
   ;; 命令捕获
   (push '("oc" "命令" plain (file "~/document/study/git/notes/system/command.org")  " | %U | %^{命令} | %^{描述} | %^{类别} |") org-capture-templates)
   ;; 想法捕获
-  (push '("oi" "想法" plain (file+headline "~/document/org/today-task/plan.org" "INBOX") "***** %U %?\n") org-capture-templates)
+  (push '("i" "想法" plain (file+headline "~/document/org/today-task/plan.org" "INBOX（收集箱）") "***** %U %?\n") org-capture-templates)
   ;; link模板
-  (push '("ol" "链接" plain (file+headline "~/document/org/link.org" "Links") "***** %U %^{简介} \n [[%^{链接}][%^{名称}]]") org-capture-templates)
+  (push '("ol" "链接" plain (file+headline "~/document/org/link.org" "Links") "***** %U [[%^{链接}][%^{名称}]]") org-capture-templates)
   ;; 密码
   (push '("op" "密码" plain (file "~/document/org/passwords.org.cpt") "* %U - %^{title} %^G\n\n  - 用户名: %^{用户名}\n  - 密码: %^{密码}" :kill-buffer t) org-capture-templates)
   ;; 笔记本
   (push '("on" "笔记" plain (file "~/document/org/notes.org") "***** %U %?\n") org-capture-templates)
   ;; 去做
-  (push '("ot" "TODO" plain (file+headline "~/document/org/today-task/plan.org" ",TODO") "***** [TODO] %?\n") org-capture-templates)
+(push '("ot" "TODO" plain (file+headline "~/document/org/today-task/plan.org" ",TODO") "***** [TODO] %?\n") org-capture-templates)
+  (push '("od" "Countdown" plain (file+headline "~/document/org/today-task/plan.org" "Countdown") "***** [TODO] %?\n") org-capture-templates)
 
   ;; 跑步
 (push '("er" "跑步" plain(file+function "~/document/org/running.org" find-month-tree)" | %u | %^{地点} | %^{里程} | %^{时间} | =$4/$3;T |" :kill-buffer t) org-capture-templates)
@@ -114,19 +115,25 @@
 (push '("mi" "收入" plain(file "~/document/org/billing.ledger") "%<%Y-%m-%d> %^{类别} \n Income:%^{种类} \t %^{金额} CNY\n Assets:Checking%^G \n\n") org-capture-templates)
 (push '("mz" "转账" plain(file "~/document/org/billing.ledger") "%<%Y-%m-%d>  转账 \n Assets:%^G%^G \n Assets:%^G%^G \t %^{金额} CNY \n\n") org-capture-templates)
 
+;; 事情做完的capture
+(push '("d" "has_done" plain(file+function "~/document/org/today-task/has_done.org" find-month-tree)" | %u | %^{事物} | %^{耗费时间（番茄数）} | %^{备注} | " :kill-buffer t) org-capture-templates)
+
 ;; org美化
 (use-package org-superstar
   :ensure t
   :after org
   :hook (org-mode . org-superstar-mode))
 
-
 (setq org-agenda-files (list "~/document/org/today-task/plan.org"
                              "~/document/org/today-task/task.org"
                              "~/document/org/today-task/金额.org"))
 
-  
+; (setq org-image-actual-width nil)
 
+;; Latex相关的配置
+(use-package auctex
+  :ensure t)
+(setq  TeX-engine 'xetex)
 
 (provide 'init-org)
 ;;; init-org.el ends here
